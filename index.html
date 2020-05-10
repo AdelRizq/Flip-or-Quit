@@ -1,161 +1,161 @@
-* {
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-html {
-    font-family: "Lobster", cursive;
-}
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flip-or-Quit</title>
+  <link rel="stylesheet" type="text/css" href="Flip-or-Quit.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
+</head>
 
-body {
-    perspective: 500px;
-    background-image: linear-gradient(#141f31, #233952);
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
-}
+<body>
+  <div class="overlay-text">
+    Click to Start
+  </div>
+  <div class="overlay-text visible game-over">
+    GAME OVER
+  </div>
+  <div class="game">
+    <br><br>
+    <div class="title">Flip-or-Quit</div>
 
-.title {
-    color: #3caea3;
-    font-size: 4em;
-    text-align: center;
-    font-weight: lighter;
+    <div class="game-info-control">
+      <h2>Time <span class="game-info time">100</span></h2>
+      <h2>Flips <span class="game-info flips">0</span></h2>
+    </div>
 
-}
+    <div class="game-cards">
+      <div class="game-card">
+        <div class="card-face front-face">
+          <img src="Assets/Images/insect.svg" alt="insect" class="insect" />
+        </div>
+        <div class="card-face back-face">
+          <img src="Assets/Images/1.png" alt="bird" class="bird" />
+        </div>
+      </div>
+      <div class="game-card">
+        <div class="card-face front-face">
+          <img src="Assets/Images/insect.svg" alt="insect" class="insect" />
+        </div>
+        <div class="card-face back-face">
+          <img src="Assets/Images/1.png" alt="bird" class="bird" />
+        </div>
+      </div>
+      <div class="game-card">
+        <div class="card-face front-face">
+          <img src="Assets/Images/insect.svg" alt="insect" class="insect" />
+        </div>
+        <div class="card-face back-face">
+          <img src="Assets/Images/2.png" alt="bird" class="bird" />
+        </div>
+      </div>
+      <div class="game-card">
+        <div class="card-face front-face">
+          <img src="Assets/Images/insect.svg" alt="insect" class="insect" />
+        </div>
+        <div class="card-face back-face">
+          <img src="Assets/Images/2.png" alt="bird" class="bird" />
+        </div>
+      </div>
+      <div class="game-card">
+        <div class="card-face front-face">
+          <img src="Assets/Images/insect.svg" alt="insect" class="insect" />
+        </div>
+        <div class="card-face back-face">
+          <img src="Assets/Images/3.png" alt="bird" class="bird" />
+        </div>
+      </div>
+      <div class="game-card">
+        <div class="card-face front-face">
+          <img src="Assets/Images/insect.svg" alt="insect" class="insect" />
+        </div>
+        <div class="card-face back-face">
+          <img src="Assets/Images/3.png" alt="bird" class="bird" />
+        </div>
+      </div>
+      <div class="game-card">
+        <div class="card-face front-face">
+          <img src="Assets/Images/insect.svg" alt="insect" class="insect" />
+        </div>
+        <div class="card-face back-face">
+          <img src="Assets/Images/4.png" alt="bird" class="bird" />
+        </div>
+      </div>
+      <div class="game-card">
+        <div class="card-face front-face">
+          <img src="Assets/Images/insect.svg" alt="insect" class="insect" />
+        </div>
+        <div class="card-face back-face">
+          <img src="Assets/Images/4.png" alt="bird" class="bird" />
+        </div>
+      </div>
+      <div class="game-card">
+        <div class="card-face front-face">
+          <img src="Assets/Images/insect.svg" alt="insect" class="insect" />
+        </div>
+        <div class="card-face back-face">
+          <img src="Assets/Images/5.png" alt="bird" class="bird" />
+        </div>
+      </div>
+      <div class="game-card">
+        <div class="card-face front-face">
+          <img src="Assets/Images/insect.svg" alt="insect" class="insect" />
+        </div>
+        <div class="card-face back-face">
+          <img src="Assets/Images/5.png" alt="bird" class="bird" />
+        </div>
+      </div>
+      <div class="game-card">
+        <div class="card-face front-face">
+          <img src="Assets/Images/insect.svg" alt="insect" class="insect" />
+        </div>
+        <div class="card-face back-face">
+          <img src="Assets/Images/6.png" alt="bird" class="bird" />
+        </div>
+      </div>
+      <div class="game-card">
+        <div class="card-face front-face">
+          <img src="Assets/Images/insect.svg" alt="insect" class="insect" />
+        </div>
+        <div class="card-face back-face">
+          <img src="Assets/Images/7.png" alt="bird" class="bird" />
+        </div>
+      </div>
+      <div class="game-card">
+        <div class="card-face front-face">
+          <img src="Assets/Images/insect.svg" alt="insect" class="insect" />
+        </div>
+        <div class="card-face back-face">
+          <img src="Assets/Images/8.svg" alt="bird" class="bird" />
+        </div>
+      </div>
+      <div class="game-card">
+        <div class="card-face front-face">
+          <img src="Assets/Images/insect.svg" alt="insect" class="insect" />
+        </div>
+        <div class="card-face back-face">
+          <img src="Assets/Images/7.png" alt="bird" class="bird" />
+        </div>
+      </div>
+      <div class="game-card">
+        <div class="card-face front-face">
+          <img src="Assets/Images/insect.svg" alt="insect" class="insect" />
+        </div>
+        <div class="card-face back-face">
+          <img src="Assets/Images/8.svg" alt="bird" class="bird" />
+        </div>
+      </div>
+      <div class="game-card">
+        <div class="card-face front-face">
+          <img src="Assets/Images/insect.svg" alt="insect" class="insect" />
+        </div>
+        <div class="card-face back-face">
+          <img src="Assets/Images/6.png" alt="bird" class="bird" />
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
 
-.game-info-control {
-    width: 500px;
-    margin: auto;
-    color: #3caea3;
-    position: relative;
-    font-size: 1.4em;
-    display: flex;
-    justify-content: space-between;
-}
-
-.game-cards {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 1.4em;
-    width: 500px;
-    justify-content: center;
-    margin: auto;
-}
-
-.game-card {
-    height: 125px;
-    background-image: linear-gradient(rgb(41, 75, 119), #101b27);
-
-    width: 100px;
-    transition: all 0.2s ease-in-out;
-    position: relative;
-    backface-visibility: hidden;
-    border-radius: 7px;
-}
-
-.game-card:hover {
-    transform: scale(1.07);
-    /* background-image: linear-gradient(rgb(41, 75, 119), #3caea3); */
-    box-shadow: 0px 0px 5px #f6d55c, 0px 0px 15px #ed553b, 0px 0px 10px #f6d55c,
-        0px 0px 25px #3caea3;
-}
-
-.card-face {
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    transition: all 1s ease-in-out;
-    border-radius: 7px;
-}
-
-.game-card:hover .front-face {
-    transform: rotateY(180deg);
-}
-
-.game-card:hover .back-face {
-    transform: rotateY(0);
-}
-
-.front-face:hover .insect {
-    transform: translateY(-10px) rotate(10deg) translateX(5px);
-}
-
-.insect {
-    position: absolute;
-    width: 70px;
-    height: 70px;
-    transition: all 0.3s ease-in-out;
-}
-
-.back-face {
-    transform: rotateY(180deg);
-    background-image: linear-gradient(rgb(41, 75, 119), #3caea3);
-}
-
-.bird {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    transition: all 0.3s ease-in-out;
-}
-
-.game-card:hover .bird {
-    animation: dance 1s linear infinite;
-}
-
-@keyframes dance {
-
-    0%,
-    100% {
-        transform: rotate(0);
-    }
-
-    25% {
-        transform: rotate(10deg);
-    }
-
-    75% {
-        transform: rotate(-10deg);
-    }
-}
-
-.overlay-text {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    margin: 0;
-    padding: 0;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #3caea3;
-}
-
-.overlay-text.visible {
-    animation: overlay-show 1s linear forwards;
-    z-index: 10;
-}
-
-@keyframes overlay-show {
-    0% {
-        background-color: rgba(0, 0, 0, 0);
-        font-size: 0;
-    }
-
-    100% {
-        background-color: rgba(0, 0, 0, 0.8);
-        font-size: 10em;
-    }
-}
-
-.game-over {
-    font-family: sans-serif;
-}
+</html>
