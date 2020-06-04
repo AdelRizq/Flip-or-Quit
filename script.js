@@ -182,7 +182,7 @@ class FlipOrQuit {
 function startLoading() {
   let overlays = Array.from(doc.getElementsByClassName("overlay-text"));
   let cards = Array.from(doc.getElementsByClassName("game-card"));
-  let game = new FlipOrQuit(50, cards);
+  let game = new FlipOrQuit(60, cards);
 
   overlays.forEach((overlay) => {
     overlay.onclick = () => {

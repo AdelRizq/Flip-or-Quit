@@ -68,7 +68,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    transition: all 1s ease-in-out;
+    transition: all .5s ease-in-out;
     border-radius: 7px;
 }
 
@@ -189,10 +189,6 @@ body {
         font-size: 0;
         visibility: hidden;
     }
-}
-
-.game-over {
-    /*font-family: sans-serif;*/
 }
 
 .overlay-text-small {
