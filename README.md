@@ -50,4 +50,4 @@ Check out our [contributing guidelines](https://github.com/AdelRizq/Flip-or-Quit
  
 ## 📜 **License**
 
-> This project is licensed under MIT License, See [License](https://github.com/AdelRizq/Flip-or-Quit) for more information ©AdelRizq.
+> This project is licensed under MIT License, See [License](https://github.com/AdelRizq/Flip-or-Quit/blob/master/LICENSE) for more information ©AdelRizq.
