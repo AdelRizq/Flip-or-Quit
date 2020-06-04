@@ -15,17 +15,16 @@ body {
 }
 
 .title {
-    color: #3caea3;
+    color: #ffed28;
     font-size: 4em;
     text-align: center;
     font-weight: lighter;
-
 }
 
 .game-info-control {
     width: 500px;
     margin: auto;
-    color: #3caea3;
+    color: #ffed28;
     position: relative;
     font-size: 1.4em;
     display: flex;
@@ -42,7 +41,7 @@ body {
 }
 
 .game-card {
-    height: 125px;
+    height: 120px;
     background-image: linear-gradient(rgb(41, 75, 119), #101b27);
 
     width: 100px;
@@ -73,38 +72,54 @@ body {
     border-radius: 7px;
 }
 
-.game-card:hover .front-face {
+.back-face {
+    transform: rotateY(180deg);
+    background-image: linear-gradient(rgb(41, 75, 119), #3caea3);
+}
+
+.game-card.visible .front-face {
     transform: rotateY(180deg);
 }
 
-.game-card:hover .back-face {
+.game-card.visible {
     transform: rotateY(0);
 }
 
-.front-face:hover .insect {
-    transform: translateY(-10px) rotate(10deg) translateX(5px);
+.game-card.visible .back-face {
+    transform: rotateY(0);
 }
 
-.insect {
+.front-face:hover .card-face-texture {
+    animation: fly 1s ease-in-out infinite;
+}
+
+@keyframes fly {
+    0% {}
+
+    50% {
+        transform: translateY(-20px) rotate(10deg) translateX(10px);
+    }
+
+    100% {
+        transform: translateX(0) rotate(0) translateY(0);
+    }
+}
+
+.card-face-texture {
     position: absolute;
     width: 70px;
     height: 70px;
     transition: all 0.3s ease-in-out;
 }
 
-.back-face {
-    transform: rotateY(180deg);
-    background-image: linear-gradient(rgb(41, 75, 119), #3caea3);
-}
-
 .bird {
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     transition: all 0.3s ease-in-out;
 }
 
-.game-card:hover .bird {
+.game-card.matched .bird {
     animation: dance 1s linear infinite;
 }
 
@@ -133,15 +148,22 @@ body {
     margin: 0;
     padding: 0;
 
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
-    color: #3caea3;
+    /* color: #3caea3; */
+    color: #ffed28;
+    visibility: hidden;
+    transition: all 1s ease-in-out;
+
 }
 
 .overlay-text.visible {
     animation: overlay-show 1s linear forwards;
     z-index: 10;
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
 }
 
 @keyframes overlay-show {
@@ -156,6 +178,23 @@ body {
     }
 }
 
+@keyframes overlay-hide {
+    0% {
+        background-color: rgba(0, 0, 0, 0.8);
+        font-size: 10em;
+    }
+
+    100% {
+        background-color: rgba(0, 0, 0, 0);
+        font-size: 0;
+        visibility: hidden;
+    }
+}
+
 .game-over {
-    font-family: sans-serif;
+    /*font-family: sans-serif;*/
+}
+
+.overlay-text-small {
+    font-size: .3em;
 }
