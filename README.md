@@ -18,7 +18,7 @@
 ## 📽 **Demo**
 
 <div align="center">
-    <img width="800" src="demo/flip-or-quit.gif">
+    <img width="700" src="demo/flip-or-quit.gif">
 </div>
 
 ---
@@ -27,10 +27,10 @@
 
 <div align="center">
   
-<img width="800" src="screenshots/welcome.png">
-<img width="800" src="screenshots/game-instant.png">
-<img width="800" src="screenshots/winning.png">
-<img width="800" src="screenshots/gameover.png">
+<img width="700" src="screenshots/welcome.png">
+<img width="700" src="screenshots/game-instant.png">
+<img width="700" src="screenshots/winning.png">
+<img width="700" src="screenshots/gameover.png">
 
 </div>
 
